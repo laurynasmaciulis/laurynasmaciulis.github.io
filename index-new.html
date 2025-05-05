@@ -14,64 +14,68 @@
         margin: 0;
       }
 
+      h1 {
+        text-transform: uppercase;
+        font-size: 46px;
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 40px;
+      }
+
+      section > div {
+        width: 100%;
+        max-width: 900px;
+      }
+
+      #services h2, #partners h2, #projects h2, #testimonials h2 {
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+      }
+
+      #partners h2, #testimonials h2 {
+        color: #fff;
+      }
+
+      .bar-dark {
+        background: #000;
+      }
+
+      .bar-light {
+        background: #fff;
+      }
+
+      .bar {
+        width: 20px;
+        height: 2px;
+        margin-right: 10px;
+      }
+
+      h2 span {
+        display: block;
+      }
+
+      /* Header and Navigation */
       header {
         display: flex;
         gap: 10px;
         padding: 15px 40px;
         color: #fff;  
         background-color: #181818;
-      }
-
-      #hero h1 {
-        font-size: 56px;
-        font-weight: 800;
-      }
-
-      #hero h2 {
-        font-size: 32px;
-        line-height: 1.4em;
-        font-weight: 400;
-      }
-
-      #services h2 {
-        font-size: 32px;
-        font-weight: 600;
-      }  
-
-      #hero a {
-        background: #ff9900;
-        padding: 20px;
-        color: #181818;
-        display: flex;
-        font-size: 26px;
-        max-width: 320px;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-top: 70px;
-      }
-
-      #services {
-        padding: 15px 40px;
-      }
-
-      @media (max-width: 780px) {
-        header {
-          padding: 15px;
-        }
-
-        #hero h1 {
-          font-size: 44px;
-          font-weight: 800;
-        }
-
-        #hero h2 {
-          font-size: 20px;
-          line-height: 1.4em;
-          font-weight: 400;
-        }
       }
 
       header > div {
@@ -117,71 +121,36 @@
         padding: 25px;
       }
 
-      @media (min-width: 1500px) {
-        #hero {
-          min-height: 80vh;
-          max-height: 80vh;
-        }
-      }
-
-      @media (max-width: 990px) {
-        #hero {
-          max-height: 50vh;
-          min-height: 50vh;
-        }
-      }
-
-      @media (max-width: 768px) {
-        #hero {
-          max-height: 70vh;
-        }
-      }
-
-      @media (max-width: 576px) {
-        #hero {
-          background-position: 50% 50%;
-          max-height: 75vh;
-          height: 75%;
-          min-height: 500px;
-        }
-      }
-
       #hero > div {
         width: 100%;
         color: #fff;
         max-width: 700px;
       }
 
-      #services {
+      #hero h1 {
+        font-size: 56px;
+        font-weight: 800;
+      }
+
+      #hero h2 {
+        font-size: 32px;
+        line-height: 1.4em;
+        font-weight: 400;
+      }
+
+      #hero a {
+        background: #ff9900;
+        padding: 20px;
+        color: #181818;
         display: flex;
-        flex-direction: column;
+        font-size: 26px;
+        max-width: 320px;
         justify-content: center;
         align-items: center;
-      }
-
-      #services > div {
-        width: 100%;
-        max-width: 900px;
-      }
-
-      #services h2 {
+        text-decoration: none;
         text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-      }
-
-      #services h2 .bar {
-        width: 20px;
-        height: 2px;
-        margin-right: 10px;
-        background: #000;
-      }
-
-      #services h2 span {
-        display: block;
+        font-weight: 700;
+        margin-top: 70px;
       }
 
       .services-grid {
@@ -191,19 +160,11 @@
         margin-top: 20px;
       }
 
-      h1 {
-        text-transform: uppercase;
-        font-size: 46px;
-        font-weight: 700;
-      }
-
-      h2 {
-        font-size: 32px;
-        font-weight: 600;
+      #sub-contracting {
+        background-color: #ff9900;
       }
 
       .sub-contracting {
-        background-color: #ff9900;
         text-align: center;
         padding: 50px 100px;
         font-size: 18px;
@@ -216,6 +177,19 @@
 
       .sub-contracting div {
         max-width: 900px;
+        padding: 50px 0;
+      }
+
+      .sub-contracting h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 1.1em;
+      }
+
+      .sub-contracting ul {
+        margin-top: 30px;
+        padding: 0;
       }
 
       .sub-contracting li {
@@ -229,54 +203,8 @@
         background: transparent;
       }
 
-      .sub-contracting ul {
-        margin-top: 30px;
-        padding: 0;
-      }
-
-      .sub-contracting h2 {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 2em;
-        line-height: 1.1em;
-      }
-
       #partners {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #181818;
-      }
-
-      #partners {
-        padding: 15px 40px;
-      }
-
-      #partners > div {
-        width: 100%;
-        max-width: 900px;
-      }
-
-      #partners h2 {
-        text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        color: #fff;
-      }
-
-      #partners h2 .bar {
-        width: 20px;
-        height: 2px;
-        margin-right: 10px;
-        background: #fff;
-      }
-
-      #partners h2 span {
-        display: block;
       }
 
       .partners-grid {
@@ -293,42 +221,6 @@
         max-width: 100%;
       }
 
-      #projects {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #projects {
-        padding: 15px 40px;
-      }
-
-      #projects > div {
-        width: 100%;
-        max-width: 900px;
-      }
-
-      #projects h2 {
-        text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-      }
-
-      #projects h2 .bar {
-        width: 20px;
-        height: 2px;
-        margin-right: 10px;
-        background: #000;
-      }
-
-      #projects h2 span {
-        display: block;
-      }
-
       .project-image {
         border-radius: 10px 10px 0 0;
         overflow: hidden;
@@ -340,48 +232,13 @@
         object-fit: cover;
       }
 
-      .projects {
-        display: flex;
-        gap : 40px;
-      }
-
       #testimonials {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #181818;
-      }
-
-      #testimonials > div {
-        width: 100%;
-        max-width: 900px;
-      }
-
-      #testimonials h2 {
-        text-transform: uppercase;
-        font-size: 16px;
-        letter-spacing: 1.5px;
-        font-weight: 400;
-        display: flex;
-        align-items: center;
-        color: #fff;
-      }
-
-      #testimonials h2 .bar {
-        width: 20px;
-        height: 2px;
-        margin-right: 10px;
-        background: #fff;
-      }
-
-      #testimonials h2 span {
-        display: block;
       }
 
       .testimonial {
         padding-top: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
       }
 
       .testimonial-text {
@@ -389,7 +246,7 @@
         font-size: 22px;
         line-height: 1.5;
         color: #fff;
-        padding: 15px 0 15px;
+        padding: 15px 0;
         margin-top: 15px;
         border-top: 1px solid #818181;
         border-bottom: 1px solid #818181;
@@ -404,18 +261,12 @@
       }
 
       #contact {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         background-color: #ff9900;
         text-align: center;
         color: #fff;
       }
 
       #contact > div {
-        width: 100%;
-        max-width: 900px;
         padding: 50px 0;
       }
 
@@ -460,6 +311,52 @@
         width: 100%;
         max-width: 900px; 
       }
+
+      @media (min-width: 1500px) {
+        #hero {
+          min-height: 80vh;
+          max-height: 80vh;
+        }
+      }
+
+      @media (max-width: 990px) {
+        #hero {
+          max-height: 50vh;
+          min-height: 50vh;
+        }
+      }
+
+      @media (max-width: 780px) {
+        header {
+          padding: 15px;
+        }
+
+        #hero h1 {
+          font-size: 44px;
+          font-weight: 800;
+        }
+
+        #hero h2 {
+          font-size: 20px;
+          line-height: 1.4em;
+          font-weight: 400;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #hero {
+          max-height: 70vh;
+        }
+      }
+
+      @media (max-width: 576px) {
+        #hero {
+          background-position: 50% 50%;
+          max-height: 75vh;
+          height: 75%;
+          min-height: 500px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -481,7 +378,7 @@
       </section>
       <section id="partners">
         <div>
-          <h2><span class="bar"></span><span>We proud to work with</span></h2>
+          <h2><span class="bar bar-light"></span><span>We proud to work with</span></h2>
           <div class="partners-grid">
             <div class="lenstore">
               <img src="images/logos/lenstore.svg" height="30" alt="Lenstore" />
@@ -515,7 +412,7 @@
       </section>
       <section id="services">
         <div>
-          <h2><span class="bar"></span><span>What we do</span></h2>
+          <h2><span class="bar bar-dark"></span><span>What we do</span></h2>
           <div class="services-grid">
             <div class="service-item">
               <h3></span>Web Development</h3>
@@ -545,7 +442,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="sub-contracting">
         <div class="sub-contracting">
           <div>
             <h2>Need sub-contracting service?</h2>
@@ -570,13 +467,13 @@
       </section>
       <section id="projects">
         <div>
-          <h2><span class="bar"></span><span>Recent Work</span></h2>
+          <h2><span class="bar bar-dark"></span><span>Recent Work</span></h2>
           <div class="projects">
             <div>
+              <h3>Bespoke eCommerce Platform operating in 5 European markets </h3>
               <div class="project-image">
                 <img src="images/lenstore-platform.webp" alt="Lenstore eCommerce Platform"/>
               </div>
-              <h3>Bespoke eCommerce Platform operating in 5 European markets </h3>
               <p>Key Features:</p>
               <ul>
                 <li>Mobile-first responsive design optimized for all device types</li>
@@ -587,10 +484,10 @@
               </ul>
             </div>
             <div>
+              <h3>Hybrid Mobile Application (iOS & Android)</h3>
               <div class="project-image">
                 <img src="images/withyou-app.webp" alt="WithYou support app"/>
               </div>
-              <h3>Hybrid Mobile Application (iOS & Android)</h3>
               <p>Key Features:</p>
                 <ul>
                   <li>Location-based service finder with interactive map and advanced search functionality</li>
@@ -624,13 +521,13 @@
       </section>
       <section id="testimonials">
         <div>
-          <h2><span class="bar"></span><span>Testimonials</span></h2>
+          <h2><span class="bar bar-light"></span><span>Testimonials</span></h2>
           <div class="testimonial">
             <img src="images/logos/lenstore.svg" height="30" alt="Lenstore" />
             <div class="testimonial-text">
               <img src="images/quote.svg" height="30" aria-hidden="true" />
               <span>
-                [Agency] brought exceptional skill and dedication to building our contact lenses eCommerce platform. Their expertise and meticulous attention to detail delivered a seamless shopping experience across all our sites spanning five different regions. Their strong work ethic and adaptability to evolving project needs made them an invaluable partner. I wholeheartedly recommend [Agency] for any digital projects - they consistently exceed expectations and push the boundaries of what's possible.
+                I wholeheartedly recommend [Agency] for any front-end development projects, as they consistently exceeds expectations and pushes the boundaries of innovation.
               </span>
             </div>
             <div class="testimonial-author">Rob Scurr, CTO</div>
@@ -640,7 +537,7 @@
             <div class="testimonial-text">
               <img src="images/quote.svg" height="30" aria-hidden="true" />
               <span>
-                [Agency] has been an exceptional partner on this project. Their work has been nothing short of fantastic, delivering results that impressed all our stakeholders. Their outstanding technical expertise combined with remarkable attention to detail truly set them apart in the industry.
+                Thank you so much for your help on this project, the work you've done has been fantastic and I know they said thanks on the call just then but I know Effie and that's her impressed.
               </span>
               </div>
             <div class="testimonial-author">Jon Carlos, Technical Director</div>
@@ -650,7 +547,7 @@
             <div class="testimonial-text">
               <img src="images/quote.svg" height="30" aria-hidden="true" />
               <span>
-                [Agency] helped to deliver our client's vision for an AI-powered HR platform into reality. [Agency]'s' development team implementing intuitive data visualizations that brought our analytics to life. Their thorough performance optimization significantly enhanced the user experience and loading times. What truly set them apart was their comprehensive documentation, enabling seamless knowledge transfer within our organization. [Agency] delivers technical excellence with clear strategic business value.
+                [Agency] helped to deliver our client's vision for an AI-powered HR platform into reality. Client was delighted with the outcome.
               </span>
             </div>
             <div class="testimonial-author">Brian Young, Co Founder</div>
