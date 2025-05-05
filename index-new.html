@@ -185,7 +185,7 @@
 
       .sub-contracting {
         text-align: center;
-        padding: 50px 100px;
+        padding: 50px 0;
         font-size: 18px;
         color: #fff;
         display: flex;
@@ -377,6 +377,11 @@
         max-width: 900px; 
       }
 
+      footer p {
+        margin: 0;
+        padding: 15px 0;
+      }
+
       @media (min-width: 1500px) {
         #hero {
           min-height: 80vh;
@@ -388,6 +393,10 @@
         #hero {
           max-height: 50vh;
           min-height: 50vh;
+        }
+
+        footer p {
+          padding: 15px 40px;
         }
       }
 
@@ -411,6 +420,26 @@
       @media (max-width: 768px) {
         #hero {
           max-height: 70vh;
+        }
+
+        #hero a, #sub-contracting a {
+          font-size: 20px;
+        }
+
+        .contact-container {
+          flex-direction: column;
+        }
+
+        .contact {
+          text-align: center;
+        }
+
+        .contact a {
+          font-size: 20px;
+        }
+
+        .contact h3 {
+          justify-content: center;
         }
       }
 
@@ -548,9 +577,9 @@
               <ul>
                 <li>Multi-region support</li>
                 <li>SEO and performance monitoring</li>
-                <li>Content Management System (CMS)</li>
+                <li>Content Management System</li>
                 <li>Secure multi-payment gateway</li>
-                <li>Custom integration with existing legacy systems</li>
+                <li>Integration with legacy systems</li>
                 <li>Custom UX component library</li>
               </ul>
             </div>
@@ -563,7 +592,7 @@
                 <ul>
                   <li>Location-based service finder</li>
                   <li>Secure live chat</li>
-                  <li>Content Management System (CMS)</li>
+                  <li>Content Management System</li>
                   <li>Offline mode with data caching</li>
                 </ul>
             </div>
